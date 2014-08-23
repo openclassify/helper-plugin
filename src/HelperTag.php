@@ -1,4 +1,4 @@
-<?php namespace Addon\Tag\Helper;
+<?php namespace Streams\Addon\Tag\Helper;
 
 use Streams\Core\Addon\TagAbstract;
 
