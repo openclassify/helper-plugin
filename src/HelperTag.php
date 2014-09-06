@@ -24,6 +24,7 @@ class HelperTag extends TagAbstract
         'is_string',
         'ltrim',
         'md5',
+        'memory_get_usage',
         'nl2br',
         'preg_match',
         'preg_replace',
@@ -42,6 +43,30 @@ class HelperTag extends TagAbstract
     ];
 
     /**
+     * Return the memory usage.
+     *
+     * @return string
+     */
+    public function memory_get_usage()
+    {
+        $unit = array('b', 'kb', 'mb');
+
+        $size = memory_get_usage(true);
+
+        return round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
+    }
+
+    /**
+     * Return the request time.
+     *
+     * @return mixed
+     */
+    public function request_time()
+    {
+        return number_format(microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'], 2).' s';
+    }
+
+    /**
      * Hook into the call method to allow PHP functions.
      *
      * @param $method
@@ -50,10 +75,10 @@ class HelperTag extends TagAbstract
      */
     public function __call($method, $arguments)
     {
-        if (in_array($method, $this->allowedFunctions) and function_exists($method)) {
-            return call_user_func_array($method, $this->attributes);
-        } elseif (method_exists($this, $method)) {
+        if (method_exists($this, $method)) {
             return call_user_func_array([$this, $method], $this->attributes);
+        } elseif (in_array($method, $this->allowedFunctions) and function_exists($method)) {
+            return call_user_func_array($method, $this->attributes);
         }
 
         return null;
