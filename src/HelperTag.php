@@ -4,6 +4,8 @@ use Anomaly\Streams\Platform\Addon\Tag\TagAddon;
 
 class HelperTag extends TagAddon
 {
+    protected $slug = 'helper';
+
     /**
      * Allowed PHP functions.
      *
@@ -43,42 +45,18 @@ class HelperTag extends TagAddon
     ];
 
     /**
-     * Return the memory usage.
-     *
-     * @return string
-     */
-    public function memory_get_usage()
-    {
-        $unit = array('b', 'kb', 'mb');
-
-        $size = memory_get_usage(true);
-
-        return round($size / pow(1024, ($i = floor(log($size, 1024)))), 2) . ' ' . $unit[$i];
-    }
-
-    /**
-     * Return the request time.
-     *
-     * @return mixed
-     */
-    public function request_time()
-    {
-        return number_format(microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'], 2).' s';
-    }
-
-    /**
      * Hook into the call method to allow PHP functions.
      *
      * @param $method
      * @param $arguments
      * @return null|void
      */
-    public function __call($method, array $arguments = [])
+    public function __call($key, array $params = [])
     {
-        if (method_exists($this, $method)) {
-            return call_user_func_array([$this, $method], $this->attributes);
-        } elseif (in_array($method, $this->allowedFunctions) and function_exists($method)) {
-            return call_user_func_array($method, $this->attributes);
+        if (method_exists($this, $key)) {
+            return call_user_func_array([$this, $key], $this->attributes);
+        } elseif (in_array($key, $this->allowedFunctions) and function_exists($key)) {
+            return call_user_func_array($key, $this->attributes);
         }
 
         return null;
