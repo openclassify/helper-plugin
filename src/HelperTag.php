@@ -1,4 +1,4 @@
-<?php namespace Streams\Addon\Tag\Helper;
+<?php namespace Anomaly\Streams\Tag\Helper;
 
 use Streams\Core\Addon\TagAbstract;
 
