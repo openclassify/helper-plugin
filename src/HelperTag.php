@@ -73,7 +73,7 @@ class HelperTag extends TagAddon
      * @param $arguments
      * @return null|void
      */
-    public function __call($method, $arguments)
+    public function __call($method, array $arguments = [])
     {
         if (method_exists($this, $method)) {
             return call_user_func_array([$this, $method], $this->attributes);
