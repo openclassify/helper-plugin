@@ -4,7 +4,6 @@ use Anomaly\Streams\Platform\Addon\Tag\TagAddon;
 
 class HelperTag extends TagAddon
 {
-    protected $slug = 'helper';
 
     /**
      * Allowed PHP functions.
@@ -51,12 +50,14 @@ class HelperTag extends TagAddon
      * @param $arguments
      * @return null|void
      */
-    public function __call($key, array $params = [])
+    public function __call($method, array $arguments = [])
     {
-        if (method_exists($this, $key)) {
-            return call_user_func_array([$this, $key], $this->attributes);
-        } elseif (in_array($key, $this->allowedFunctions) and function_exists($key)) {
-            return call_user_func_array($key, $this->attributes);
+        if (method_exists($this, $method)) {
+
+            return call_user_func_array([$this, $method], $this->attributes);
+        } elseif (in_array($method, $this->allowedFunctions) and function_exists($method)) {
+
+            return call_user_func_array($method, $this->attributes);
         }
 
         return null;
