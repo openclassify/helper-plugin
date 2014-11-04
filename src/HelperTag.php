@@ -1,8 +1,8 @@
 <?php namespace Anomaly\Streams\Addon\Tag\Helper;
 
-use Anomaly\Streams\Platform\Addon\Tag\TagAddon;
+use Anomaly\Streams\Platform\Addon\Tag\Tag;
 
-class HelperTag extends TagAddon
+class HelperTag extends Tag
 {
 
     /**
