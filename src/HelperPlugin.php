@@ -1,6 +1,6 @@
-<?php namespace Anomaly\Streams\Addon\Tag\Helper;
+<?php namespace Anomaly\Streams\Addon\Plugin\Helper;
 
-use Anomaly\Streams\Platform\Addon\Tag\Plugin;
+use Anomaly\Streams\Platform\Addon\Plugin\Plugin;
 
 /**
  * Class HelperPlugin
@@ -8,7 +8,7 @@ use Anomaly\Streams\Platform\Addon\Tag\Plugin;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\Streams\Addon\Tag\Helper
+ * @package       Anomaly\Streams\Addon\Plugin\Helper
  */
 class HelperPlugin extends Plugin
 {
