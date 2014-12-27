@@ -1,7 +1,7 @@
 {
-    "name": "anomaly/helper-tag",
+    "name": "anomaly/helper-plugin",
     "type": "streams-addon",
-    "description": "Helper tag.",
+    "description": "Helper plugin.",
     "authors": [
         {
             "name": "AnomalyLabs",

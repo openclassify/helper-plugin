@@ -1,16 +1,19 @@
 <?php namespace Anomaly\Streams\Addon\Tag\Helper;
 
-use Anomaly\Streams\Platform\Addon\Tag\Tag;
+use Anomaly\Streams\Platform\Addon\Tag\Plugin;
 
-class HelperTag extends Tag
+/**
+ * Class HelperPlugin
+ *
+ * @link          http://anomaly.is/streams-platform
+ * @author        AnomalyLabs, Inc. <hello@anomaly.is>
+ * @author        Ryan Thompson <ryan@anomaly.is>
+ * @package       Anomaly\Streams\Addon\Tag\Helper
+ */
+class HelperPlugin extends Plugin
 {
 
-    /**
-     * Allowed PHP functions.
-     *
-     * @var array
-     */
-    protected $allowedFunctions = [
+    /*protected $allowedFunctions = [
         'count',
         'empty',
         'explode',
@@ -33,7 +36,7 @@ class HelperTag extends Tag
         'sprintf',
         'str_replace',
         'str_word_count',
-        'strip_tags',
+        'strip_plugins',
         'strpos',
         'strtolower',
         'strtoupper',
@@ -41,25 +44,5 @@ class HelperTag extends Tag
         'trim',
         'ucfirst',
         'ucwords',
-    ];
-
-    /**
-     * Hook into the call method to allow PHP functions.
-     *
-     * @param $method
-     * @param $arguments
-     * @return null|void
-     */
-    public function __call($method, array $arguments = [])
-    {
-        if (method_exists($this, $method)) {
-
-            return call_user_func_array([$this, $method], $this->attributes);
-        } elseif (in_array($method, $this->allowedFunctions) and function_exists($method)) {
-
-            return call_user_func_array($method, $this->attributes);
-        }
-
-        return null;
-    }
+    ];*/
 }

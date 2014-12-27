@@ -2,5 +2,5 @@
 
 return [
     'name'        => 'Helper',
-    'description' => 'Helper tag.',
+    'description' => 'Helper plugin.',
 ];
