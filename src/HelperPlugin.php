@@ -1,4 +1,4 @@
-<?php namespace Anomaly\Streams\Addon\Plugin\Helper;
+<?php namespace Anomaly\HelperPlugin;
 
 use Anomaly\Streams\Platform\Addon\Plugin\Plugin;
 
