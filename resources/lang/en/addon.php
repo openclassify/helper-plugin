@@ -2,5 +2,5 @@
 
 return [
     'name'        => 'Helper',
-    'description' => 'Helper plugin.',
+    'description' => 'A plugin that provides numerous helpful PHP interactions for Twig.',
 ];
