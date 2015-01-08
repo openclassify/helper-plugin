@@ -58,12 +58,11 @@ class HelperPlugin extends Plugin
      */
     public function getFunctions()
     {
-        $functions = [];
-
-        foreach ($this->functions as $function) {
-            $functions[] = new \Twig_SimpleFunction("helper_{$function}", $function);
-        }
-
-        return $functions;
+        return array_map(
+            function ($function) {
+                return new \Twig_SimpleFunction("helper_{$function}", $function);
+            },
+            $this->functions
+        );
     }
 }
