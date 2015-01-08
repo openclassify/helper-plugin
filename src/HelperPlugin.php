@@ -61,7 +61,7 @@ class HelperPlugin extends Plugin
         $functions = [];
 
         foreach ($this->functions as $function) {
-            $functions[] = new \Twig_SimpleFunction($function, $function);
+            $functions[] = new \Twig_SimpleFunction("helper_{$function}", $function);
         }
 
         return $functions;
