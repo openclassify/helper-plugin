@@ -13,7 +13,12 @@ use Anomaly\Streams\Platform\Addon\Plugin\Plugin;
 class HelperPlugin extends Plugin
 {
 
-    /*protected $allowedFunctions = [
+    /**
+     * Available helper functions.
+     *
+     * @var array
+     */
+    protected $functions = [
         'count',
         'empty',
         'explode',
@@ -44,5 +49,21 @@ class HelperPlugin extends Plugin
         'trim',
         'ucfirst',
         'ucwords',
-    ];*/
+    ];
+
+    /**
+     * Return plugin functions.
+     *
+     * @return array
+     */
+    public function getFunctions()
+    {
+        $functions = [];
+
+        foreach ($this->functions as $function) {
+            $functions[] = new \Twig_SimpleFunction($function, $function);
+        }
+
+        return $functions;
+    }
 }
