@@ -4,8 +4,8 @@
     "description": "A plugin that provides numerous helpful PHP interactions for Twig.",
     "keywords": ["streams-addon", "helpers", "pyrocms", "laravel"],
     "homepage": "http://anomaly.is/",
-    "license": "MIT",
     "version": "1.0.0-alpha",
+    "license": "MIT",
     "authors": [
         {
             "name": "AnomalyLabs, Inc.",
