@@ -2,7 +2,12 @@
     "name": "anomaly/helper-plugin",
     "type": "streams-addon",
     "description": "A plugin that provides numerous helpful PHP interactions.",
-    "keywords": ["streams-addon", "helper", "pyrocms", "laravel"],
+    "keywords": [
+        "streams-addon",
+        "helper",
+        "pyrocms",
+        "laravel"
+    ],
     "homepage": "http://anomaly.is/",
     "version": "1.0.0-alpha",
     "license": "MIT",
