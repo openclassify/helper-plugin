@@ -60,7 +60,7 @@ class HelperPlugin extends Plugin
     {
         return array_map(
             function ($function) {
-                return new \Twig_SimpleFunction("helper_{$function}", $function);
+                return new \Twig_SimpleFunction($function, $function);
             },
             $this->functions
         );
