@@ -41,6 +41,7 @@ class HelperPlugin extends Plugin
         'print_r',
         'rtrim',
         'sprintf',
+        'str_pad',
         'str_replace',
         'str_word_count',
         'strip_plugins',
