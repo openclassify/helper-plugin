@@ -36,6 +36,7 @@ class HelperPlugin extends Plugin
         'md5',
         'memory_get_usage',
         'nl2br',
+        'parse_url',
         'preg_match',
         'preg_replace',
         'print_r',
