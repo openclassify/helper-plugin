@@ -1,3 +1,3 @@
-#Helpers Plugin
+# Helper Plugin
 
-A plugin that provides numerous helpful PHP interactions for Twig.
+A plugin that provides numerous helpful PHP functions.
