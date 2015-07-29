@@ -54,6 +54,7 @@ class HelperPlugin extends Plugin
         'trim',
         'ucfirst',
         'ucwords',
+        'var_export',
         'var_dump'
     ];
 
