@@ -19,6 +19,7 @@ class HelperPlugin extends Plugin
      * @var array
      */
     protected $functions = [
+        'addslashes',
         'count',
         'empty',
         'explode',
