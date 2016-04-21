@@ -31,6 +31,7 @@ class HelperPlugin extends Plugin
         'htmlspecialchars',
         'htmlspecialchars_decode',
         'http_build_str',
+        'http_build_query',
         'implode',
         'is_array',
         'is_int',
