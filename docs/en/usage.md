@@ -2,7 +2,7 @@
 
 To use any of the available helper methods - just reference a Twig function matching the PHP function. The arguments will be the same too.
 
-    {% verbatim %}{{ html_build_query({"foo": "Bar"}) }}{% endverbatim %}
+    {% verbatim %}{{ html_build_query({"foo": "Bar"}) }}{% endverbatim %} // foo=Bar
 
 <hr>
 
