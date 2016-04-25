@@ -1,6 +1,6 @@
 # Usage
 
-To use any of the following methods - just call the Twig function matching the PHP function.
+To use any of the available helper methods - just reference a Twig function matching the PHP function. The arguments will be the same too.
 
     {% verbatim %}{{ html_build_query({"foo": "Bar"}) }}{% endverbatim %}
 
