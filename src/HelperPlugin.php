@@ -20,6 +20,7 @@ class HelperPlugin extends Plugin
      */
     protected $functions = [
         'addslashes',
+        'array_dot',
         'array_merge',
         'array_merge_recursive',
         'count',
