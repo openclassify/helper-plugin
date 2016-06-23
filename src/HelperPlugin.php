@@ -22,6 +22,7 @@ class HelperPlugin extends Plugin
         'addslashes',
         'array_merge',
         'array_merge_recursive',
+        'array_search',
         'count',
         'empty',
         'explode',
