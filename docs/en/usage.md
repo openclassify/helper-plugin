@@ -8,8 +8,10 @@ To use any of the available helper methods - just reference a Twig function matc
 
 {% set functions = [
     'addslashes',
+    'array_dot',
     'array_merge',
     'array_merge_recursive',
+    'array_search',
     'count',
     'empty',
     'explode',
