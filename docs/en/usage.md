@@ -55,6 +55,6 @@ To use any of the available helper methods - just reference a Twig function matc
 
 <ul>
 {% for function in functions %}
-    <li><a href="http://php.net/manual/en/function.{{ str_slug(function, '-') }}.php">{{ function }}</a></li>
+    <li><a href="http://php.net/manual/en/function.{{ str_slug(function, '-') }}.php" target="_blank">{{ function }}</a></li>
 {% endfor %}
 </ul>
