@@ -8,7 +8,6 @@ use Anomaly\Streams\Platform\Addon\Plugin\Plugin;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\Streams\Addon\Plugin\Helper
  */
 class HelperPlugin extends Plugin
 {
@@ -62,7 +61,7 @@ class HelperPlugin extends Plugin
         'ucfirst',
         'ucwords',
         'var_export',
-        'var_dump'
+        'var_dump',
     ];
 
     /**
