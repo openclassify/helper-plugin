@@ -41,6 +41,8 @@ class HelperPlugin extends Plugin
         'is_int',
         'is_integer',
         'is_string',
+        'json_encode',
+        'json_decode',
         'ltrim',
         'md5',
         'memory_get_usage',
