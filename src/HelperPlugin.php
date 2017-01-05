@@ -64,6 +64,7 @@ class HelperPlugin extends Plugin
         'rtrim'                   => [],
         'sprintf'                 => [],
         'str_pad'                 => [],
+        'strtok'                  => [],
         'str_replace'             => [],
         'str_word_count'          => [],
         'strip_plugins'           => [],
