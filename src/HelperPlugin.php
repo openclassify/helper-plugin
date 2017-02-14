@@ -67,7 +67,7 @@ class HelperPlugin extends Plugin
         'strtok'                  => [],
         'str_replace'             => [],
         'str_word_count'          => [],
-        'strip_plugins'           => [],
+        'strip_tags'              => [],
         'strpos'                  => [],
         'strtolower'              => [],
         'strtoupper'              => [],
