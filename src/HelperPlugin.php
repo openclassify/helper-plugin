@@ -94,14 +94,15 @@ class HelperPlugin extends Plugin
         );
 
         $this->functions[] = new \Twig_SimpleFunction(
-            'parse_str', function ($string) {
+            'parse_str',
+            function ($string) {
 
-            $array = [];
+                $array = [];
 
-            parse_str($string, $array);
+                parse_str($string, $array);
 
-            return $array;
-        }
+                return $array;
+            }
         );
 
         return $this->functions;
