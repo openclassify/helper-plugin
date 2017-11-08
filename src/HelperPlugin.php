@@ -74,6 +74,8 @@ class HelperPlugin extends Plugin
         'trim'                    => [],
         'ucfirst'                 => [],
         'ucwords'                 => [],
+        'urlencode'               => [],
+        'urldecode'               => [],
         'var_export'              => [],
         'var_dump'                => [],
     ];
