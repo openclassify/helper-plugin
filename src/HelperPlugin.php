@@ -54,6 +54,7 @@ class HelperPlugin extends Plugin
         'ltrim'                   => [],
         'md5'                     => [],
         'memory_get_usage'        => [],
+        'mix'                     => [],
         'mt_rand'                 => [],
         'nl2br'                   => [],
         'parse_url'               => [],
