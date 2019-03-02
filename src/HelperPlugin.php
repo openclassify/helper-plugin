@@ -82,6 +82,7 @@ class HelperPlugin extends Plugin
         'urldecode'               => [],
         'var_export'              => [],
         'var_dump'                => [],
+        'vsprintf'                => [],
     ];
 
     /**
