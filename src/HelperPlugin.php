@@ -24,6 +24,7 @@ class HelperPlugin extends Plugin
         'array_merge'             => [],
         'array_merge_recursive'   => [],
         'array_search'            => [],
+        'base_path'               => [],
         'base64_encode'           => [],
         'base64_decode'           => [],
         'ceil'                    => [],
