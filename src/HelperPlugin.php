@@ -29,7 +29,7 @@ class HelperPlugin extends Plugin
         'base64_decode'           => [],
         'ceil'                    => [],
         'count'                   => [],
-        'd'                       => [
+        'dump'                    => [
             'is_safe' => ['html'],
         ],
         'dd'                      => [
