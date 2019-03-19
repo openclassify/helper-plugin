@@ -22,6 +22,7 @@ class HelperPlugin extends Plugin
         'array_dot'               => [],
         'array_filter'            => [],
         'array_merge'             => [],
+        'array_diff_key'          => [],
         'array_merge_recursive'   => [],
         'array_search'            => [],
         'base_path'               => [],
