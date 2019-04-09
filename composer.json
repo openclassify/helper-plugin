@@ -12,13 +12,24 @@
     "authors": [
         {
             "name": "PyroCMS, Inc.",
-            "email": "support@pyrocms.com",
             "homepage": "http://pyrocms.com/",
             "role": "Owner"
+        },
+        {
+            "name": "Ryan Thompson",
+            "homepage": "http://ryanthepyro.com/",
+            "role": "Developer"
         }
     ],
     "support": {
-        "email": "support@anomaly.is"
+        "docs": "https://pyrocms.com/documentation/helper-plugin",
+        "forum": "https://pyrocms.com/forum/channels/helper-plugin",
+        "slack": "https://pyrocms.com/slack",
+        "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [helper-plugin]",
+        "source": "https://github.com/anomalylabs/helper-plugin"
+    },
+    "require": {
+        "anomaly/streams-platform": "^1.1"
     },
     "autoload": {
         "psr-4": {
