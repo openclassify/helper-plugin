@@ -60,6 +60,7 @@ class HelperPlugin extends Plugin
         'mt_rand'                 => [],
         'nl2br'                   => [],
         'parse_url'               => [],
+        'pathinfo'                => [],
         'preg_match'              => [],
         'preg_replace'            => [],
         'print_r'                 => [],
