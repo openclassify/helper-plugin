@@ -1,4 +1,6 @@
-<?php namespace Anomaly\HelperPlugin;
+<?php
+
+namespace Anomaly\HelperPlugin;
 
 use Anomaly\Streams\Platform\Addon\Plugin\Plugin;
 
@@ -18,6 +20,7 @@ class HelperPlugin extends Plugin
      * @var array
      */
     protected $functions = [
+        'abort'                   => [],
         'addslashes'              => [],
         'array_dot'               => [],
         'array_filter'            => [],
@@ -37,6 +40,7 @@ class HelperPlugin extends Plugin
         'dd'                      => [
             'is_safe' => ['html'],
         ],
+        'die',
         'empty'                   => [],
         'explode'                 => [],
         'floor'                   => [],
