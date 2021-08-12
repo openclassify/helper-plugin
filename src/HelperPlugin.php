@@ -20,7 +20,6 @@ class HelperPlugin extends Plugin
      * @var array
      */
     protected $functions = [
-        'abort'                   => [],
         'addslashes'              => [],
         'array_dot'               => [],
         'array_filter'            => [],
@@ -40,7 +39,6 @@ class HelperPlugin extends Plugin
         'dd'                      => [
             'is_safe' => ['html'],
         ],
-        'die',
         'empty'                   => [],
         'explode'                 => [],
         'floor'                   => [],
@@ -116,6 +114,20 @@ class HelperPlugin extends Plugin
                 parse_str($string, $array);
 
                 return $array;
+            }
+        );
+
+        $this->functions[] = new \Twig_SimpleFunction(
+            'abort',
+            function ($code, $message = '') {
+                abort($code, $message);
+            }
+        );
+
+        $this->functions[] = new \Twig_SimpleFunction(
+            'die',
+            function ($message = null) {
+                die($message);
             }
         );
 
