@@ -101,11 +101,11 @@ class HelperPlugin extends Plugin
         array_walk(
             $this->functions,
             function (&$value, $key) {
-                $value = new \Twig_SimpleFunction($key, $key, $value);
+                $value = new \Twig\TwigFunction($key, $key, $value);
             }
         );
 
-        $this->functions[] = new \Twig_SimpleFunction(
+        $this->functions[] = new \Twig\TwigFunction(
             'parse_str',
             function ($string) {
 
@@ -117,14 +117,14 @@ class HelperPlugin extends Plugin
             }
         );
 
-        $this->functions[] = new \Twig_SimpleFunction(
+        $this->functions[] = new \Twig\TwigFunction(
             'abort',
             function ($code, $message = '') {
                 abort($code, $message);
             }
         );
 
-        $this->functions[] = new \Twig_SimpleFunction(
+        $this->functions[] = new \Twig\TwigFunction(
             'die',
             function ($message = null) {
                 die($message);
